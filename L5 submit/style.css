@@ -1,0 +1,92 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #fafaec; /* Soft background color */
+    color: #473d8d; /* Soft foreground color */
+    margin: 15pt; /* Margin greater than 10pt */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24pt;
+    color: #f5f0ff;
+    background-color: #b3a1c9;
+}
+h2 {
+    font-size: 20pt;
+    color: #534354;
+    background-color: #e7d7f3;
+}
+h3 {
+    font-size: 18pt;
+    color: #675770;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 12pt;
+    color: #5b4a4d;
+    line-height: 1.5;
+}
+
+/* Link styles */
+a:link, a:visited {
+    color: #7159a6;
+    text-decoration: none;
+}
+a:hover {
+    color: #9d80d6;
+    text-decoration: underline;
+}
+a:active {
+    color: #47337b;
+}
+
+/* Div for layout (CSS table style) */
+.table-container {
+    display: table;
+    width: 100%;
+    border-spacing: 10px;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+/* Additional styles for lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Course button styles */
+.course-btn {
+    background-color: #9497d9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.course-btn:hover {
+    background-color: #eacfcf;
+}
+
+/* Hide the <dd> descriptions by default */
+dd {
+    display: none;
+    margin-left: 20px;
+}
+
+/* Dropdown indicator styles */
+.dropdown-indicator {
+    font-size: 16pt;
+    margin-left: 10px;
+    cursor: pointer;
+}
