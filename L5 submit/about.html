@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - M. Farzeen</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+
+<!-- Navigation buttons -->
+<nav class="navbar">
+    <button class="nav-btn" id="home-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('index.html')">Home</button>
+    <button class="nav-btn" id="about-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('about.html')">About</button>
+    <div class="nav-dropdown">
+        <button class="nav-btn" id="portfolio-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Portfolio</button>
+        <div class="dropdown-content">
+            <a href="https://github.com/mfarzeen/mfarzeen.github.io" target="_blank">Web Design</a>
+            <a href="https://colab.research.google.com/drive/1pY_F2MQX1J6bws9acsaE4VTpspjW__F2?usp=sharing" target="_blank">BI and Analytics</a>
+        </div>
+    </div>
+</nav>
+
+<h1>About Me</h1>
+
+<p>
+    Hello! My name is Farzeen. I'm doing my 4th year of my Bachelors of Commerce; Majoring in Business Technology Management (Hons) Degree from Ted Rogers School of Management Department at Toronto Metropolitan University. I'm from Bangladesh living in Canada.
+</p>
+
+<!-- Image with click-to-enlarge functionality -->
+<div class="image-container">
+    <img id="profile-pic" src="file:///C:/Users/sirsi/OneDrive/Pictures/81A980C1-445A-4815-9852-E1301052D940.jpg" alt="Profile picture" onclick="enlargeImage()">
+</div>
+
+<hr>
+
+<!-- Moved content sections -->
+<h2 id="institutions-heading"> <span class="dropdown-indicator">></span> My Institutions: </h2>
+<div id="institutions-content">
+    <ul>
+        <li>Toronto Metropolitan University [Toronto, Canada]: 2021-2025</li>
+        <li>Cambridge International Education [Dhaka, Bangladesh]: 2019-2020</li>
+        <li>Sunnydale School [Dhaka, Bangladesh]: 2003-2018</li>
+    </ul>
+</div>
+
+<hr>
+
+<h2 id="activities-heading"><span class="dropdown-indicator">></span> Extra-curricular activities in School:</h2>
+<div id="activities-content">
+    <ol>
+        <li>Jr. Business Analyst in Finance Club</li>
+        <li>International Exchange Student Mentor</li>
+        <li>Ted Pack Mentor</li>
+    </ol>
+</div>
+
+<hr>
+
+
+
+<!-- Additional information about you can go here -->
+<h2>Professional Experience:</h2>
+<p>I have been involved in...</p>
+
+<hr>
+
+
+<footer>
+    <p><small>Copyright © 2024 Mumtahina Farzeen. All Rights Reserved.</small></p>
+</footer>
+
+</body>
+</html>
