@@ -7,6 +7,25 @@ body {
     margin: 15pt; /* Margin greater than 10pt */
 }
 
+/* Navigation button styles */
+.navbar {
+    margin-bottom: 15px; /* Space below the navigation */
+}
+
+.nav-btn {
+    background-color: #6c5fe0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14pt;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.nav-btn:hover {
+    background-color: #5649b5;
+}
+
 /* Heading styles */
 h1 {
     font-size: 24pt;

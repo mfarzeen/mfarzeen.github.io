@@ -54,4 +54,3 @@ document.addEventListener('DOMContentLoaded', function() {
         description.style.display = 'none';
     });
 });
-
