@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website by M. Farzeen</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+
+<!-- Navigation buttons -->
+<nav class="navbar">
+    <button class="nav-btn" id="home-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('index.html')">Home</button>
+    <button class="nav-btn" id="about-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('about.html')">About</button>
+    <div class="nav-dropdown">
+        <button class="nav-btn" id="portfolio-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Portfolio</button>
+        <div class="dropdown-content">
+            <a href="https://github.com/mfarzeen/mfarzeen.github.io" target="_blank">Web Design</a>
+            <a href="https://colab.research.google.com/drive/1pY_F2MQX1J6bws9acsaE4VTpspjW__F2?usp=sharing" target="_blank">BI and Analytics</a>
+        </div>
+    </div>
+    <button class="nav-btn" id="contact-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('Contact.html')">Contact</button>
+</nav>
+
+<h1>Website by M. Farzeen</h1>
+<h6> ITM780 Lab 5, 09/10/2024 </h6>
+
+<!-- Button to prompt user for name -->
+<button id="namePromptBtn" class="nav-btn">Enter Your Name</button>
+<p id="nameOutput"></p>
+
+<!-- Image with click-to-enlarge functionality -->
+<div class="image-container">
+    <img id="profile-pic" src="tumblr_mq50y4zfz71szhoyto1_400.gif" alt="Profile picture" onclick="enlargeImage()">
+
+</div>
+
+<hr>
+
+<h2 id="courses-heading">
+    <span class="dropdown-indicator">></span> Most Useful Courses:
+</h2>
+<div id="courses-content">
+    <dl>
+        <dt><button class="course-btn" data-target="itm500-desc">ITM500</button></dt>
+        <dd id="itm500-desc" style="display: none;">Data and Information Management. Advanced use of SQL; converting the conceptual data models into relational data models and verifying its structural characteristics with normalization techniques.</dd>
+
+        <dt><button class="course-btn" data-target="itm711-desc">ITM711</button></dt>
+        <dd id="itm711-desc" style="display: none;">Cloud Computing. A comprehensive coverage on the concepts, architectures, and technologies of cloud computing from a business perspective.</dd>
+
+        <dt><button class="course-btn" data-target="itm820-desc">ITM820</button></dt>
+        <dd id="itm820-desc" style="display: none;">Information Systems Security and Privacy. Information on Quantum computing and explores the principles of data privacy, threats to privacy, international and national policy, particularly related to privacy-enhancing technologies for e-Business and IT.</dd>
+    </dl>
+</div>
+
+
+<hr>
+
+<h2 id="awards-heading"><span class="dropdown-indicator">></span> Recent Awards:</h2>
+<div id="awards-content">
+    <ul>
+        <li>Legacy Leadership Prize (2022)</li>
+    </ul>
+</div>
+
+<hr>
+
+
+
+<!-- CSS Table layout -->
+<div class="table-container">
+    <div class="table-row">
+        <div class="table-cell">
+            <h3>Link 1:</h3>
+            <a href="https://www.linkedin.com/in/mumtahina-farzeen/" target="_blank">Connect on my LinkedIn!</a>
+        </div>
+        <div class="table-cell">
+            This link will provide more information about my professional profile and allow you to connect with me.
+        </div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell">
+            <h3>Link 2:</h3>
+            <a href="https://www.torontomu.ca/information-technology-management/business-technology-management/">My Undergraduate Degree</a>
+        </div>
+        <div class="table-cell">
+            This link will provide more information regarding my undergraduate degree in Toronto Metropolitan University.
+        </div>
+    </div>
+</div>
+
+<br>
+
+<footer>
+    <p><small>Copyright © 2024 Mumtahina Farzeen. All Rights Reserved.</small></p>
+    <blockquote>Owls are very cute</blockquote> <a href="https://i.imgur.com/2cpxDzI.gif"> 🦉</a>
+</footer>
+
+</body>
+</html>

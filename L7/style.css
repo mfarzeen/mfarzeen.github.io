@@ -1,0 +1,122 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #fafaec; /* Soft background color */
+    color: #473d8d; /* Soft foreground color */
+    margin: 15pt; /* Margin greater than 10pt */
+}
+
+/* Navigation button styles */
+.navbar {
+    margin-bottom: 15px; /* Space below the navigation */
+}
+
+.nav-btn {
+    background-color: #6c5fe0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14pt;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.nav-btn:hover {
+    background-color: #5649b5;
+}
+
+/* Dropdown content styling */
+.nav-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Image styles */
+.image-container {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 200px;
+    transition: width 0.5s;
+}
+
+#profile-pic:hover {
+    cursor: pointer;
+}
+
+/* Output for name prompt */
+#nameOutput {
+    font-size: 16pt;
+    color: #534354;
+    margin-top: 10px;
+}
+
+/* Div for layout (CSS table style) */
+.table-container {
+    display: table;
+    width: 100%;
+    border-spacing: 10px;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+/* Additional styles for lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Course button styles */
+.course-btn {
+    background-color: #9497d9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.course-btn:hover {
+    background-color: #eacfcf;
+}
+
+/* Hide the <dd> descriptions by default */
+dd {
+    display: none;
+    margin-left: 20px;
+}
+
+/* Dropdown indicator styles */
+.dropdown-indicator {
+    font-size: 16pt;
+    margin-left: 10px;
+    cursor: pointer;
+}
