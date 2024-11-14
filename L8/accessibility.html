@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<!-- Navigation buttons -->
+<nav class="navbar">
+    <button class="nav-btn" id="home-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('index.html')">Home</button>
+    <button class="nav-btn" id="about-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('about.html')">About</button>
+    <div class="nav-dropdown">
+        <button class="nav-btn" id="portfolio-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Portfolio</button>
+        <div class="dropdown-content">
+            <a href="https://github.com/mfarzeen/mfarzeen.github.io" target="_blank">Web Design</a>
+            <a href="https://colab.research.google.com/drive/1pY_F2MQX1J6bws9acsaE4VTpspjW__F2?usp=sharing" target="_blank">BI and Analytics</a>
+        </div>
+    </div>
+    <button class="nav-btn" id="contact-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('Contact.html')">Contact</button>
+    <button class="nav-btn" id="accessibility-tab" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="navigateTo('accessibility.html')">Accessibility</button>
+</nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Accessible Site</h1>
+        <p>Have an inclusive digital experience!</p>
+    </header>
+
+    <!-- Audio Section -->
+    <section id="audio-section">
+        <h2>Audio Experience</h2>
+        <figure>
+            <audio controls>
+                <source src="voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <figcaption>Audio recording by Mumtahina Farzeen, <em>source: Personal Recording, 2024</em></figcaption>
+        </figure>
+    </section>
+
+    <!-- Accessibility Buttons -->
+    <section id="accessibility-buttons">
+        <h2>Accessibility Tools</h2>
+        <p>Use these tools to customize your experience:</p>
+        <button onclick="increaseTextSize()">Increase Text Size</button>
+        <button onclick="toggleColorBlindMode()">Toggle Color Blind Mode</button>
+    </section>
+
+    <!-- Image Gallery with Alt-Text Button -->
+    <section id="image-section">
+        <h2>Image Gallery</h2>
+        <p>Click on the button below each image to view its description:</p>
+
+        <!-- Image 1 -->
+        <figure>
+            <img src="owl1.jpg" alt="Tawny owl" id="img1">
+            <figcaption> A cute owl </figcaption>
+        </figure>
+
+        <!-- Image 2 -->
+        <figure>
+            <img src="owl2.jpg" alt="Snowy Owl" id="img2">
+            <figcaption>The Harry Potter owl</figcaption>
+        </figure>
+
+        <!-- Image 3 -->
+        <figure>
+            <img src="owl3.jpg" alt="Eldritch horror that tells you to say 'como estas'" id="img3">
+            <figcaption>Owl from Duolingo app</figcaption>
+        </figure>
+
+        <button onclick="showAltText()">Show All Image Descriptions</button>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+</html>

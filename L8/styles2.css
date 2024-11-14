@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f7fa;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #843dd6, #8669e8);
+    color: white;
+    padding: 2em 1em;
+    border-bottom: 3px solid #6f00ff;
+}
+
+header h1 {
+    margin: 0.5em 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(272, 67%, 47%);
+    padding: 15px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: hsla(246, 68%, 50%, 0.5);
+    border-radius: 5px;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+form fieldset {
+    margin: 15px 0;
+}
+
+form button {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+}
+
+form button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    color: #7b00ff;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+section p {
+    color: #555;
+}
+
+/* Accessibility Button Styles */
+button {
+    background-color: #6f00ff;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    margin: 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Audio Controls */
+audio {
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* Image Section Styles */
+figure {
+    margin: 1.5em 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Large Text Mode */
+body.large-text {
+    font-size: 1.25em;
+}
+
+/* Color Blind Mode - Updated Styles */
+body.color-blind-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.color-blind-mode header {
+    background: linear-gradient(135deg, #a52a2a, #708090);
+}
+
+body.color-blind-mode section {
+    background-color: #444; /* Dark background for sections */
+    color: #f4f4f9; /* Light text color */
+}
+
+body.color-blind-mode button {
+    background-color: #a52a2a; /* Accessible color for buttons */
+    color: #f4f4f9; /* Light text on buttons */
+}
+
+body.color-blind-mode h1, body.color-blind-mode h2, body.color-blind-mode figcaption {
+    color: #f4f4f9;
+}
