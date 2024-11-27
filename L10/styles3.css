@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #b8b5fb, #523dae);
+    color: white;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+#citations a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+#citations a:hover {
+    text-decoration: underline;
+}
+
+/* Instagram Icon Styling */
+#instagram-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#instagram-link a:hover {
+    color: #8a3ab9;
+}
